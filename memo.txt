@@ -1,0 +1,34 @@
+git 버전 확인
+git --version
+
+프로젝트 디렉토리에 로컬 저장소 (.git) 생성
+git init
+
+git 버전 관리할 파일을 선택
+git add test.py # 스테이지에 올렸다.
+
+버전 만들기
+git commit -m "test.py를 커밋"
+
+현재 이름 및 email 보기
+git config user.name/email
+
+로그 확인
+git log
+
+원격 저장소에서 변경된 사항을 가져오기
+git fetch origin(가져오기만)
+git pull origin(가져와서 merge)
+
+.gitignore 
+git이 추적하지 않아야 할 파일을 지정하는 파일
+예)
+파일이름.확장명
+*.확장명
+폴더명/
+
+branch 
+작업에 대한 가지
+큰 줄기에 영향을 주지 않고 가지에서만 작업을 할 수 있음
+각 가지는 자체 커밋 및 변경을 가질 수 있음
+> master 에 영향을 미치지 않고 여러 기능이나 버그 수정을 동시에 수행할 수 있음
